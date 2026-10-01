@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { NAV_LINKS } from "@/lib/data";
 
 export default function Footer() {
@@ -14,11 +15,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg shadow-green-900/40">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="white" />
-                </svg>
+            <div className="flex items-center gap-4">
+              <div className="relative w-16 h-16 flex items-center justify-center shrink-0">
+                <Image
+                  src="/assets/images/product1.png"
+                  alt="Xeltra Energy Logo"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-white font-black text-xl tracking-wider font-[Outfit]">

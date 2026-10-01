@@ -19,7 +19,7 @@ export default function Home() {
         <section className="py-20 bg-slate-900/60 relative overflow-hidden border-y border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-6">
                 <span className="text-green-400 text-xs font-bold uppercase tracking-widest bg-green-500/10 px-4 py-1.5 rounded-full border border-green-500/20">
                   Clean Energy Pioneer
                 </span>
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
 
               {/* Uncropped Banner Display */}
-              <div className="lg:col-span-5 relative">
+              <div className="lg:col-span-6 relative">
                 <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950/90 flex items-center justify-center p-2">
                   <Image
                     src="/assets/images/banner.png"

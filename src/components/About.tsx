@@ -87,16 +87,18 @@ export default function About() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950/80">
+            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <Image
                 src="/assets/images/solar-home.png"
                 alt="Xeltra Energy rooftop solar installation"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-2"
+                className="object-cover object-top"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex items-end">
-                <span className="text-white font-semibold text-xs sm:text-sm">
+              {/* Strong overlay so text is always readable */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-5">
+                <span className="inline-flex items-center gap-2 bg-green-600/90 backdrop-blur-md text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg">
                   ⚡ 5kW Rooftop Solar + ESS Battery Backup
                 </span>
               </div>
