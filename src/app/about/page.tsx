@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import SubpageHero from "@/components/SubpageHero";
 import About from "@/components/About";
-import Team from "@/components/Team";
+
 import Sustainability from "@/components/Sustainability";
 import Achievements from "@/components/Achievements";
 import Footer from "@/components/Footer";
@@ -24,7 +24,7 @@ export default function AboutPage() {
           subtitle="Learn about Xeltra Energy Ltd's vision, mission, core values, and completed rooftop solar installations."
         />
         <About />
-        <Team />
+
         <Sustainability />
         <Achievements />
       </main>
