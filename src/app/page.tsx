@@ -49,14 +49,14 @@ export default function Home() {
               </div>
 
               {/* Uncropped Banner Display */}
-              <div className="lg:col-span-6 relative">
-                <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950/90 flex items-center justify-center p-2">
+              <div className="lg:col-span-6 relative flex flex-col justify-center h-full">
+                <div className="w-full aspect-[2/1] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950/90 relative">
                   <Image
                     src="/assets/images/banner.png"
                     alt="Xeltra Energy Solar Swap Depot Bangladesh"
                     fill
                     sizes="(max-width: 1024px) 100vw, 42vw"
-                    className="object-contain p-2"
+                    className="object-cover"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent p-4 flex items-end">
                     <div className="text-white text-xs font-semibold">
@@ -166,13 +166,13 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/10 bg-slate-950/80">
+                <div className="w-full aspect-square rounded-2xl overflow-hidden border border-white/10 bg-slate-950/80 relative">
                   <Image
                     src="/assets/images/tiger-rickshaw.png"
                     alt="Xeltra EcoTrike EVX1 Tiger Edition"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-contain p-4"
+                    className="object-cover object-center"
                   />
                 </div>
               </div>
