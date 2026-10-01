@@ -52,14 +52,14 @@ export default function Solutions() {
         {/* Active Solution Spotlight */}
         <div className="bg-slate-950/80 border border-white/10 rounded-3xl p-8 lg:p-12 backdrop-blur-2xl shadow-2xl transition-all duration-500">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Visual Image Container - Uncropped */}
-            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/10 group shadow-2xl bg-slate-900/90 flex items-center justify-center p-2">
+            {/* Visual Image Container - Edge-to-Edge Fill */}
+            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/10 group shadow-2xl bg-slate-900/90">
               <Image
                 src={activeSolution.img}
                 alt={activeSolution.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-2 group-hover:scale-105 transition-transform duration-700"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex items-end">
                 <span className="bg-green-600/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs font-bold">

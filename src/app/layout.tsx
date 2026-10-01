@@ -46,6 +46,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+  icons: {
+    icon: "/assets/images/product1.png",
+    shortcut: "/assets/images/product1.png",
+    apple: "/assets/images/product1.png",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
