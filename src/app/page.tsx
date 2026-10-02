@@ -307,16 +307,38 @@ export default function Home() {
         </section>
 
         {/* Partners Banner */}
-        <section className="py-12 bg-slate-900/40 border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-6">
-              Global Hardware & Technology Partners
+        <section className="py-16 bg-slate-900/60 border-t border-white/5 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span className="text-green-400 text-xs font-bold uppercase tracking-widest bg-green-500/10 px-4 py-1.5 rounded-full border border-green-500/20 mb-3 inline-block">
+              Global Supply Chain
             </span>
-            <div className="flex flex-wrap justify-center gap-8 items-center text-slate-300 font-bold text-sm">
+            <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">
+              Global Hardware & Technology Partners
+            </h3>
+            <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mb-10">
+              Partnering with Tier-1 international energy equipment and technology manufacturers.
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 items-center">
               {PARTNERS.map((p) => (
-                <span key={p.id} className="bg-slate-950/80 px-5 py-2.5 rounded-xl border border-white/5 hover:border-green-500/30 transition-colors">
-                  {p.name} ({p.country})
-                </span>
+                <div
+                  key={p.id}
+                  className="bg-slate-950/80 border border-white/10 rounded-2xl p-5 hover:border-green-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-green-950/30 flex flex-col items-center justify-center group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 group-hover:bg-green-500/10 group-hover:border-green-500/30 transition-all shadow-inner">
+                    {p.icon}
+                  </div>
+                  <div className="font-extrabold text-white text-sm sm:text-base tracking-wide group-hover:text-green-400 transition-colors">
+                    {p.name}
+                  </div>
+                  <div className="text-[10px] text-slate-400 font-medium mt-1 flex items-center gap-1">
+                    <span>{p.country}</span>
+                    <span>{p.flag}</span>
+                  </div>
+                  <div className="text-[9px] text-green-400/90 font-bold uppercase tracking-wider mt-2.5 bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">
+                    {p.tag}
+                  </div>
+                </div>
               ))}
             </div>
           </div>

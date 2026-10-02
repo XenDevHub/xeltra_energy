@@ -263,11 +263,11 @@ export const ACHIEVEMENTS = [
 ];
 
 export const PARTNERS = [
-  { name: "HYSTORIX", country: "China", id: "hystorix" },
-  { name: "LV TOPSUN", country: "China", id: "lvtopsun" },
-  { name: "TIAN LU", country: "China", id: "tianlu" },
-  { name: "GWTIME", country: "China", id: "gwtime" },
-  { name: "China Cable Corp.", country: "China", id: "chinacable" },
+  { id: "hystorix", name: "HYSTORIX", country: "China", flag: "🇨🇳", tag: "LiFePO4 Storage", icon: "🔋" },
+  { id: "lvtopsun", name: "LV TOPSUN", country: "China", flag: "🇨🇳", tag: "Solar & Inverters", icon: "☀️" },
+  { id: "tianlu", name: "TIAN LU", country: "China", flag: "🇨🇳", tag: "Power Systems", icon: "⚡" },
+  { id: "gwtime", name: "GWTIME", country: "China", flag: "🇨🇳", tag: "Smart BMS", icon: "🌐" },
+  { id: "chinacable", name: "China Cable Corp.", country: "China", flag: "🇨🇳", tag: "Power Cabling", icon: "🔌" },
 ];
 
 export const GALLERY_IMAGES = [
