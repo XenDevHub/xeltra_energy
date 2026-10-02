@@ -32,7 +32,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3.5 group" aria-label="Xeltra Energy Home">
           <div className="relative w-14 h-14 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300">
             <Image
-              src="/assets/images/product1.png"
+              src="/assets/logo/xeltra.png"
               alt="Xeltra Energy Logo"
               width={64}
               height={64}

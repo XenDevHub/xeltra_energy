@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-4 group">
               <div className="relative w-16 h-16 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/assets/images/product1.png"
+                  src="/assets/logo/xeltra.png"
                   alt="Xeltra Energy Logo"
                   width={64}
                   height={64}
