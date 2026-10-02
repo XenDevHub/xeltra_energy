@@ -83,7 +83,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto">
-          Building Bangladesh&apos;s first integrated renewable energy ecosystem — clean EV battery swapping, rooftop solar, battery storage, and electric mobility.
+          We are building a cleaner, smarter, and more sustainable energy ecosystem for Bangladesh through renewable energy, rooftop solar, battery storage, and electric transportation, accelerating the country’s transition to a greener future.
         </p>
 
         {/* CTA Buttons */}

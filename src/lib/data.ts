@@ -10,10 +10,10 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: 130, unit: "kWh", label: "Battery Capacity" },
-  { value: 210, unit: "+", label: "Solar Panels" },
-  { value: 100, unit: "km", label: "EV Range" },
-  { value: 4, unit: "+", label: "Cities Served" },
+  { value: 625, unit: "kWh", label: "Battery Capacity" },
+  { value: 205, unit: "+", label: "Solar Panels" },
+  { value: 125, unit: "EV", label: "Daily" },
+  { value: 5, unit: "+", label: "Plants" },
 ];
 
 export const SOLUTIONS = [
@@ -52,15 +52,15 @@ export const SOLUTIONS = [
   {
     id: "power-bank",
     tag: "Energy Bank",
-    title: "Xeltra Energy Bank",
+    title: "Be a Proud Owner of Solar Plant",
     description:
-      "Mobile energy delivery — lithium-ion battery units charged from rooftop solar, delivered to customer sites as clean, quiet power.",
+      "Invest in an income-generating asset positioned at the intersection of three powerful market shifts: rising energy costs, growing demand for reliable electricity, and Bangladesh’s transition toward cleaner energy.",
     img: "/assets/images/power-bank.png",
-    alt: "Xeltra Power Bank fleet at solar charging depot",
+    alt: "Xeltra Energy Bank & Solar Plant Investment",
     specs: [
-      { label: "Battery Unit", value: "48V 100Ah" },
-      { label: "Management", value: "Smart BMS + GPS" },
-      { label: "Emissions", value: "Zero" },
+      { label: "Daily Production", value: "625 kW" },
+      { label: "Customers", value: "100+ Daily" },
+      { label: "Est. ROI", value: "~4.6 Years" },
       { label: "Deployment", value: "Scalable Fleet" },
     ],
     icon: "🔋",
