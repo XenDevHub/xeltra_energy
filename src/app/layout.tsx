@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   icons: {
-    icon: "/assets/images/product1.png",
-    shortcut: "/assets/images/product1.png",
-    apple: "/assets/images/product1.png",
+    icon: "/assets/logo/xeltra.png",
+    shortcut: "/assets/logo/xeltra.png",
+    apple: "/assets/logo/xeltra.png",
   },
   alternates: { canonical: "/" },
   openGraph: {
@@ -85,9 +85,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <head>
-        <link rel="icon" href="/assets/images/product1.png" type="image/png" />
-        <link rel="shortcut icon" href="/assets/images/product1.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/assets/images/product1.png" />
+        <link rel="icon" href="/assets/logo/xeltra.png" type="image/png" />
+        <link rel="shortcut icon" href="/assets/logo/xeltra.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/logo/xeltra.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
