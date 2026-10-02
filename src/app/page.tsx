@@ -176,33 +176,54 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Market Edge Callout */}
+        {/* Solar Plant Investment Spotlight */}
         <section className="py-20 bg-slate-950 relative overflow-hidden border-y border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-white/10 rounded-3xl p-8 sm:p-12 shadow-2xl relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-green-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div className="lg:col-span-7 text-left">
                   <span className="text-green-400 text-xs font-bold uppercase tracking-widest bg-green-500/10 px-4 py-1.5 rounded-full border border-green-500/20 mb-4 inline-block">
-                    Market Advantage
+                    ⚡ Energy Bank
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 leading-tight">
-                    Why Xeltra Outperforms Traditional Lead-Acid Rickshaws
+                  <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
+                    Be a Proud Owner of <span className="text-green-400">Solar Plant</span>
                   </h2>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
-                    From reducing daily charging down-time by 95% to saving drivers over ৳35,000 annually in battery replacements   explore our complete market analysis and technology roadmap.
+                    Invest in an income-generating asset positioned at the intersection of three powerful market shifts: rising energy costs, growing demand for reliable electricity, and Bangladesh’s transition toward cleaner energy.
                   </p>
+
+                  {/* Metrics Grid */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                    <div className="bg-white/5 p-4 rounded-2xl border border-white/5">
+                      <div className="text-xs text-slate-400 font-medium">Daily Production</div>
+                      <div className="text-green-400 font-black text-base sm:text-lg mt-1">625 kW</div>
+                    </div>
+                    <div className="bg-white/5 p-4 rounded-2xl border border-white/5">
+                      <div className="text-xs text-slate-400 font-medium">Customers</div>
+                      <div className="text-green-400 font-black text-base sm:text-lg mt-1">100+ Daily</div>
+                    </div>
+                    <div className="bg-white/5 p-4 rounded-2xl border border-white/5">
+                      <div className="text-xs text-slate-400 font-medium">Est. ROI</div>
+                      <div className="text-green-400 font-black text-base sm:text-lg mt-1">~4.6 Years</div>
+                    </div>
+                    <div className="bg-white/5 p-4 rounded-2xl border border-white/5">
+                      <div className="text-xs text-slate-400 font-medium">Deployment</div>
+                      <div className="text-green-400 font-black text-base sm:text-lg mt-1">Scalable Fleet</div>
+                    </div>
+                  </div>
+
                   <div className="flex flex-wrap gap-4">
                     <Link
-                      href="/market-analysis"
-                      className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-3.5 rounded-xl text-sm transition-all shadow-xl shadow-green-950/50 hover:-translate-y-0.5"
+                      href="/contact?inquire=solar-plant"
+                      className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3.5 rounded-xl text-xs sm:text-sm transition-all shadow-xl shadow-green-950/50 hover:-translate-y-0.5 flex items-center gap-2"
                     >
-                      Read Market & Tech Analysis
+                      Inquire About Be a Proud Owner of Solar Plant →
                     </Link>
                     <Link
-                      href="/gallery"
-                      className="bg-white/5 hover:bg-white/10 text-slate-200 font-bold px-8 py-3.5 rounded-xl text-sm transition-all border border-white/10 hover:border-white/20"
+                      href="/market-analysis"
+                      className="bg-white/5 hover:bg-white/10 text-slate-200 font-bold px-6 py-3.5 rounded-xl text-xs sm:text-sm transition-all border border-white/10 hover:border-white/20"
                     >
-                      News &amp; Updates
+                      Read Market & Tech Analysis
                     </Link>
                   </div>
                 </div>
@@ -218,7 +239,7 @@ export default function Home() {
                     />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-4 flex items-end">
                       <span className="text-white text-xs font-semibold">
-                        🔋 Xeltra Energy Bank & Mobile Power Platform
+                        🔋 Xeltra Energy Bank & Solar Plant Investment
                       </span>
                     </div>
                   </div>
