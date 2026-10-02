@@ -4,6 +4,8 @@ import About from "@/components/About";
 
 import Sustainability from "@/components/Sustainability";
 import Achievements from "@/components/Achievements";
+import IndustryAchievements from "@/components/IndustryAchievements";
+import AppComingSoon from "@/components/AppComingSoon";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -26,7 +28,9 @@ export default function AboutPage() {
         <About />
 
         <Sustainability />
+        <IndustryAchievements />
         <Achievements />
+        <AppComingSoon />
       </main>
       <Footer />
     </div>

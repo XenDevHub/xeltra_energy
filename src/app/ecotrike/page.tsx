@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "EcoTrike EVX1 Electric Rickshaw | Xeltra Energy Ltd",
   description:
-    "Discover EcoTrike EVX1 — Bangladesh's flagship solar-compatible lithium electric rickshaw with Smart BMS and 100km range.",
+    "Discover EcoTrike EVX1   Bangladesh's flagship solar-compatible lithium electric rickshaw with Smart BMS and 100km range.",
 };
 
 export default function EcoTrikePage() {
@@ -18,7 +18,7 @@ export default function EcoTrikePage() {
           badge="Flagship Electric Three-Wheeler"
           title="Next-Generation Electric"
           titleHighlight="Mobility"
-          subtitle="Discover EcoTrike EVX1 — Bangladesh's solar-swappable electric rickshaw engineered with smart thermal BMS and long-range lithium efficiency."
+          subtitle="Discover EcoTrike EVX1   Bangladesh's solar-swappable electric rickshaw engineered with smart thermal BMS and long-range lithium efficiency."
         />
         <Ecotrike />
       </main>

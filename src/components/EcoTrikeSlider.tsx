@@ -5,17 +5,17 @@ import Image from "next/image";
 const RICKSHAW_IMAGES = [
   {
     src: "/assets/images/tiger-rickshaw.png",
-    title: "EcoTrike EVX1 — Tiger Edition",
+    title: "EcoTrike EVX1   Tiger Edition",
     caption: "Reinforced Fiberglass Body & Custom Aesthetics",
   },
   {
     src: "/assets/images/ecotrike-evx1.png",
-    title: "EcoTrike EVX1 — Standard Edition",
+    title: "EcoTrike EVX1   Standard Edition",
     caption: "100 km Range & Zero Emissions Electric Mobility",
   },
   {
     src: "/assets/images/ecotrike-heritage.png",
-    title: "EcoTrike EVX1 — Heritage Modernism",
+    title: "EcoTrike EVX1   Heritage Modernism",
     caption: "Preserving Bangladesh Rickshaw Heritage with Clean Tech",
   },
 ];

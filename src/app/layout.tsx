@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Providers from "@/components/Providers";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Xeltra Energy Ltd",
   },
   description:
-    "Xeltra Energy Ltd is Bangladesh's leading clean energy company — EV charging infrastructure, rooftop solar, battery energy storage & the Ecotrike EVX1 electric three-wheeler. Building a greener Bangladesh.",
+    "Xeltra Energy Ltd is Bangladesh's leading clean energy company   EV charging infrastructure, rooftop solar, battery energy storage & the Ecotrike EVX1 electric three-wheeler. Building a greener Bangladesh.",
   keywords: [
     "Xeltra Energy",
     "EV charging Bangladesh",
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
         url: "/assets/images/banner.png",
         width: 1200,
         height: 630,
-        alt: "Xeltra Energy Ltd — Battery Swap Station and Electric Rickshaw Bangladesh",
+        alt: "Xeltra Energy Ltd   Battery Swap Station and Electric Rickshaw Bangladesh",
       },
     ],
   },
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Xeltra Energy Ltd | Clean Energy for Bangladesh",
     description:
-      "EV charging, rooftop solar, battery storage & Ecotrike EVX1 — Xeltra Energy powers Bangladesh's green future.",
+      "EV charging, rooftop solar, battery storage & Ecotrike EVX1   Xeltra Energy powers Bangladesh's green future.",
     images: ["/assets/images/banner.png"],
   },
 };
@@ -106,7 +107,7 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+880-1703063331",
+                telephone: "+880-1814001419",
                 contactType: "customer service",
               },
               sameAs: [],
@@ -134,7 +135,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-slate-950 text-white antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

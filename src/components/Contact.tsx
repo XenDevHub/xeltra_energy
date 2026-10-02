@@ -48,12 +48,13 @@ export default function Contact() {
               <h3 className="text-2xl font-black text-white mb-6">Corporate Office</h3>
 
               <div className="space-y-6">
+                {/* HQ Address */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center text-xl shrink-0">
                     📍
                   </div>
                   <div>
-                    <h4 className="text-white font-bold text-sm">Headquarters Address</h4>
+                    <h4 className="text-white font-bold text-sm">Head Office — Dhaka</h4>
                     <p className="text-slate-300 text-sm mt-1 leading-relaxed">
                       Xeltra Energy Ltd.<br />
                       House 12, Road 5, Block B, Niketan, Gulshan-1, Dhaka-1212, Bangladesh
@@ -61,6 +62,21 @@ export default function Contact() {
                   </div>
                 </div>
 
+                {/* CTG Office */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center text-xl shrink-0">
+                    📍
+                  </div>
+                  <div>
+                    <h4 className="text-white font-bold text-sm">CTG Office — Chittagong</h4>
+                    <p className="text-slate-300 text-sm mt-1 leading-relaxed">
+                      Plot 379, Khulshi Colony,<br />
+                      Nasirabad 1/A, Chittagong
+                    </p>
+                  </div>
+                </div>
+
+                {/* Phone */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center text-xl shrink-0">
                     📞
@@ -68,14 +84,15 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-bold text-sm">Phone & Support</h4>
                     <p className="text-slate-300 text-sm mt-1">
-                      <a href="tel:+8801703063331" className="hover:text-green-400 transition-colors">
-                        +880 1703-063331
+                      <a href="tel:+8801814001419" className="hover:text-green-400 transition-colors">
+                        +880 1814-001419
                       </a>
                     </p>
                     <p className="text-slate-400 text-xs mt-0.5">Sat – Thu: 9:00 AM – 6:00 PM</p>
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center text-xl shrink-0">
                     ✉️
@@ -83,8 +100,11 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-bold text-sm">Email Inquiry</h4>
                     <p className="text-slate-300 text-sm mt-1">
-                      <a href="mailto:info@xeltraenergy.com" className="hover:text-green-400 transition-colors">
+                      <a href="mailto:info@xeltraenergy.com" className="hover:text-green-400 transition-colors block">
                         info@xeltraenergy.com
+                      </a>
+                      <a href="mailto:xeltraenergybd@gmail.com" className="hover:text-green-400 transition-colors block mt-0.5">
+                        xeltraenergybd@gmail.com
                       </a>
                     </p>
                   </div>
@@ -94,7 +114,7 @@ export default function Contact() {
               {/* Direct WhatsApp Chat */}
               <div className="mt-8 pt-6 border-t border-white/10">
                 <a
-                  href="https://wa.me/8801703063331?text=Hello%20Xeltra%20Energy,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                  href="https://wa.me/8801814001419?text=Hello%20Xeltra%20Energy,%20I%20would%20like%20to%20inquire%20about%20your%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-2xl transition-all shadow-lg shadow-emerald-950/50 hover:-translate-y-0.5"
@@ -171,6 +191,8 @@ export default function Contact() {
                         <option value="Battery Swapping Hub Partnership">Battery Swapping Hub Partnership</option>
                         <option value="EcoTrike Dealership">EcoTrike Dealership / Purchase</option>
                         <option value="Corporate Fleet Consultation">Corporate Fleet Consultation</option>
+                        <option value="Solar Plant Ownership">Solar Plant Ownership</option>
+                        <option value="Battery Swappable Charging Station">Battery Swappable Charging Station</option>
                       </select>
                     </div>
                   </div>

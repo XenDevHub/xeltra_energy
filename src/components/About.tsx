@@ -23,7 +23,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Feature Grid / Cards — Mission, Vision, Impact Thesis */}
+        {/* Feature Grid / Cards   Mission, Vision, Impact Thesis */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {/* Mission */}
           <div className="bg-slate-950/60 border border-white/5 rounded-3xl p-8 hover:border-green-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-green-950/30 group flex flex-col justify-between">

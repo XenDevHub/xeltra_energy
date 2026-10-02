@@ -92,7 +92,7 @@ export default function HowItWorks() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <span className="bg-green-500/20 text-green-400 border border-green-500/30 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider inline-block">
-                Step {STEPS[activeStep].step} — {STEPS[activeStep].badge}
+                Step {STEPS[activeStep].step}   {STEPS[activeStep].badge}
               </span>
               <h3 className="text-3xl font-black text-white">
                 {STEPS[activeStep].title}

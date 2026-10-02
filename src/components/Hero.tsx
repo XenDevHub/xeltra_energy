@@ -65,7 +65,7 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-500/10 rounded-full blur-[180px] pointer-events-none" />
       </div>
 
-      {/* Content — Centered Layout */}
+      {/* Content   Centered Layout */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-500/30 text-green-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-md">

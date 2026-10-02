@@ -68,84 +68,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Details, Problem, Solution Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Details */}
-              <div className="bg-slate-950/50 border border-white/5 rounded-3xl p-6 sm:p-8 lg:col-span-3">
-                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                   <span className="text-green-400">⚡</span> The Strategy
-                 </h3>
-                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    Xeltra Energy is developing an innovative mobile clean-energy platform that integrates rooftop solar generation, portable battery storage, and electric mobility to maximize commercial value. The flagship project features a 125 kW rooftop solar plant across approximately 10,000 square feet, backed by three portable lithium-ion battery systems and an electric vehicle for mobile distribution. Rather than relying on a traditional single-customer solar model, Xeltra delivers clean power directly to high-margin off-takers, including three-wheeler charging stations, commercial clients, temporary work sites, and live events. Initial feasibility modeling projects an annual operating profit of approximately ৳30,40,875 (EBITDA before major battery reserves), based on an average of 5 peak-sun-hours per day. This baseline projection will be validated through detailed technical design, key off-take contracts, and regulatory approvals ahead of capital raising.
-                 </p>
-              </div>
-
-              {/* Problem */}
-              <div className="bg-red-950/20 border border-red-500/20 rounded-3xl p-6 sm:p-8">
-                <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                  <span className="text-red-400">⚠️</span> The Challenge
-                </h3>
-                <ul className="space-y-4 text-sm text-slate-300">
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Insufficient and unreliable EV charging infrastructure.</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Three-wheeler drivers can lose productive time during long charging cycles.</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Businesses and temporary sites need dependable electricity during grid interruptions.</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Diesel generators are costly, noisy, polluting and maintenance-intensive.</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Events, construction sites and remote communities often need temporary or mobile power.</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-red-400 mt-1">•</span>
-                    <span>Demand is growing for quiet, portable and lower-emission energy solutions.</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Solution */}
-              <div className="bg-green-950/20 border border-green-500/20 rounded-3xl p-6 sm:p-8 lg:col-span-2">
-                <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                  <span className="text-green-400">💡</span> Our Solution
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">☀️ Solar-powered Generation</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">Clean, renewable electricity generation at the source.</div>
-                  </div>
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">🔋 Portable Battery Storage</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">High-capacity energy storage for on-demand use.</div>
-                  </div>
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">🚚 Mobile Power Delivery</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">Direct delivery to off-takers and temporary sites.</div>
-                  </div>
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">⚡ Fast EV Charging</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">Reliable infrastructure for electric mobility.</div>
-                  </div>
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">📈 Multiple Revenue Streams</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">Serving diverse customer segments efficiently.</div>
-                  </div>
-                  <div className="bg-slate-900/50 p-5 rounded-2xl border border-white/5 hover:border-green-500/30 transition-colors">
-                    <div className="font-bold text-white text-sm mb-1.5">🔄 Grid Interaction</div>
-                    <div className="text-slate-400 text-xs leading-relaxed">Potential integration through applicable net-metering framework.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -267,7 +189,7 @@ export default function Home() {
                     Why Xeltra Outperforms Traditional Lead-Acid Rickshaws
                   </h2>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
-                    From reducing daily charging down-time by 95% to saving drivers over ৳35,000 annually in battery replacements — explore our complete market analysis and technology roadmap.
+                    From reducing daily charging down-time by 95% to saving drivers over ৳35,000 annually in battery replacements   explore our complete market analysis and technology roadmap.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link
@@ -280,7 +202,7 @@ export default function Home() {
                       href="/gallery"
                       className="bg-white/5 hover:bg-white/10 text-slate-200 font-bold px-8 py-3.5 rounded-xl text-sm transition-all border border-white/10 hover:border-white/20"
                     >
-                      View Project Gallery
+                      News &amp; Updates
                     </Link>
                   </div>
                 </div>
@@ -308,34 +230,31 @@ export default function Home() {
 
         {/* Partners Banner */}
         <section className="py-16 bg-slate-900/60 border-t border-white/5 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span className="text-green-400 text-xs font-bold uppercase tracking-widest bg-green-500/10 px-4 py-1.5 rounded-full border border-green-500/20 mb-3 inline-block">
-              Global Supply Chain
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span className="text-green-400 text-xs font-bold uppercase tracking-widest bg-green-500/10 px-4 py-1.5 rounded-full border border-green-500/20 mb-4 inline-block">
+              Our Ecosystem
             </span>
             <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">
-              Global Hardware & Technology Partners
+              Brands We Work With
             </h3>
-            <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mb-10">
-              Partnering with Tier-1 international energy equipment and technology manufacturers.
+            <p className="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-12">
+              Proudly partnering with innovative brands shaping the future of electric mobility and clean energy.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 items-center">
+            <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
               {PARTNERS.map((p) => (
-                <div
-                  key={p.id}
-                  className="bg-slate-950/80 border border-white/10 rounded-2xl p-5 hover:border-green-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-green-950/30 flex flex-col items-center justify-center group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 group-hover:bg-green-500/10 group-hover:border-green-500/30 transition-all shadow-inner">
-                    {p.icon}
+                <div key={p.id} className="flex flex-col items-center gap-3 group">
+                  <div
+                    className="bg-white/5 border border-white/10 rounded-2xl px-8 py-5 hover:border-green-500/30 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-green-950/30 flex items-center justify-center"
+                    style={{ minWidth: "160px", minHeight: "90px" }}
+                  >
+                    <img
+                      src={p.logo}
+                      alt={p.name + " logo"}
+                      className="max-h-12 max-w-[130px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    />
                   </div>
-                  <div className="font-extrabold text-white text-sm sm:text-base tracking-wide group-hover:text-green-400 transition-colors">
-                    {p.name}
-                  </div>
-                  <div className="text-[10px] text-slate-400 font-medium mt-1 flex items-center gap-1">
-                    <span>{p.country}</span>
-                    <span>{p.flag}</span>
-                  </div>
-                  <div className="text-[9px] text-green-400/90 font-bold uppercase tracking-wider mt-2.5 bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">
+                  <div className="text-[10px] text-green-400/80 font-bold uppercase tracking-widest bg-green-500/10 px-3 py-0.5 rounded-full border border-green-500/20">
                     {p.tag}
                   </div>
                 </div>
@@ -350,7 +269,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Action Button */}
       <a
-        href="https://wa.me/8801703063331?text=Hello%20Xeltra%20Energy,%20I%20visited%20your%20website%20and%20want%20to%20know%20more."
+        href="https://wa.me/8801814001419?text=Hello%20Xeltra%20Energy,%20I%20visited%20your%20website%20and%20want%20to%20know%20more."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white p-4 rounded-full shadow-2xl shadow-emerald-950/80 hover:scale-110 transition-all duration-300 flex items-center justify-center group"

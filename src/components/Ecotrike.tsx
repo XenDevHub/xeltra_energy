@@ -52,7 +52,7 @@ export default function Ecotrike() {
             Electric Three-Wheeler | Heritage Electrified
           </p>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            The next generation of electric three-wheelers designed specifically for Bangladesh roads — combining safety, comfort, solar swapping, and long-range lithium efficiency.
+            The next generation of electric three-wheelers designed specifically for Bangladesh roads   combining safety, comfort, solar swapping, and long-range lithium efficiency.
           </p>
         </div>
 
@@ -82,11 +82,11 @@ export default function Ecotrike() {
                   <span className="text-slate-400 font-semibold uppercase text-[10px] tracking-wider">To Purchase / Enquire:</span>
                   <div className="flex flex-wrap items-center gap-2">
                     <a
-                      href="tel:+8801703063331"
+                      href="tel:+8801814001419"
                       className="flex items-center gap-1.5 text-slate-200 hover:text-green-400 transition-colors font-medium bg-slate-900/80 px-3 py-1.5 rounded-xl border border-white/10"
                     >
                       <span>📞</span>
-                      <span>+8801703063331</span>
+                      <span>+8801814001419</span>
                     </a>
                     <a
                       href="https://www.xeltraenergy.com"
