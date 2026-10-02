@@ -274,6 +274,14 @@ export const PARTNERS = [
   { id: "ecotrike", name: "EcoTrike", logo: "/assets/logo/ecotrike-logo.png", tag: "Electric Vehicle Brand", icon: "⚡", country: "Bangladesh", flag: "🇧🇩" },
 ];
 
+export const GLOBAL_PARTNERS = [
+  { name: "HYSTORIX", country: "China", id: "hystorix" },
+  { name: "LV TOPSUN", country: "China", id: "lvtopsun" },
+  { name: "TIAN LU", country: "China", id: "tianlu" },
+  { name: "GWTIME", country: "China", id: "gwtime" },
+  { name: "China Cable Corp.", country: "China", id: "chinacable" },
+];
+
 export const GALLERY_IMAGES = [
   {
     src: "/assets/images/solar-panel-microgrid.png",

@@ -1,6 +1,6 @@
 "use client";
 
-import { ACHIEVEMENTS, PARTNERS } from "@/lib/data";
+import { ACHIEVEMENTS, PARTNERS, GLOBAL_PARTNERS } from "@/lib/data";
 
 export default function IndustryAchievements() {
   return (
@@ -75,6 +75,20 @@ export default function IndustryAchievements() {
                   {p.tag}
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Global Hardware & Technology Partners Banner */}
+        <div className="mt-12 text-center">
+          <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-6">
+            Global Hardware & Technology Partners
+          </span>
+          <div className="flex flex-wrap justify-center gap-8 items-center text-slate-300 font-bold text-sm">
+            {GLOBAL_PARTNERS.map((p) => (
+              <span key={p.id} className="bg-slate-950/80 px-5 py-2.5 rounded-xl border border-white/5 hover:border-green-500/30 transition-colors shadow-lg">
+                {p.name} ({p.country})
+              </span>
             ))}
           </div>
         </div>

@@ -21,8 +21,8 @@ export default function AboutPage() {
       <main>
         <SubpageHero
           badge="Corporate Profile"
-          title="Pioneering Green Energy in"
-          titleHighlight="Bangladesh"
+          title="Empowering a Sustainable"
+          titleHighlight="Future"
           subtitle="Learn about Xeltra Energy Ltd's vision, mission, core values, and completed rooftop solar installations."
         />
         <About />

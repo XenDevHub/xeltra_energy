@@ -16,8 +16,8 @@ export default function NewsPage() {
       <main>
         <SubpageHero
           badge="Latest from Xeltra Energy"
-          title="News &"
-          titleHighlight="Updates"
+          title="Discover Our"
+          titleHighlight="Latest Journey"
           subtitle="Stay updated with Xeltra Energy's latest news, announcements, reports, and technological developments in Bangladesh's clean energy sector."
         />
         <NewsUpdates />

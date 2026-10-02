@@ -16,8 +16,8 @@ export default function ContactPage() {
       <main>
         <SubpageHero
           badge="Direct Corporate Contact"
-          title="Let's Build a Greener"
-          titleHighlight="Future Together"
+          title="Get in Touch with"
+          titleHighlight="Xeltra Energy"
           subtitle="Reach out to our corporate office in Dhaka or chat directly with our energy representatives on WhatsApp."
         />
         <Contact />
