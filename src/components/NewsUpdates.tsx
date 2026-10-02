@@ -103,16 +103,35 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 // ─── Share helpers ────────────────────────────────────────────────────────────
-function shareUrl(platform: string, title: string) {
-  const url = encodeURIComponent(typeof window !== "undefined" ? window.location.href : "https://xeltraenergy.com");
+function shareUrl(platform: string, title: string, img?: string) {
+  const origin = typeof window !== "undefined" ? window.location.origin : "https://www.xeltraenergy.com";
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://www.xeltraenergy.com/gallery";
+
+  // Construct absolute image URL
+  let fullImgUrl = "";
+  if (img) {
+    if (img.startsWith("http")) {
+      fullImgUrl = img;
+    } else if (img.startsWith("/")) {
+      fullImgUrl = `${origin}${img}`;
+    }
+  }
+
+  const encodedPageUrl = encodeURIComponent(pageUrl);
+  const encodedImgUrl = fullImgUrl ? encodeURIComponent(fullImgUrl) : encodedPageUrl;
   const text = encodeURIComponent(title);
+
+  // For Facebook & WhatsApp: passing direct absolute image URL allows Facebook crawler to scrap & preview the image
   const links: Record<string, string> = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
-    twitter: `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
-    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
-    whatsapp: `https://wa.me/?text=${text}%20${url}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedImgUrl}`,
+    twitter: `https://twitter.com/intent/tweet?text=${text}&url=${encodedImgUrl}`,
+    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedPageUrl}&title=${text}`,
+    whatsapp: `https://wa.me/?text=${text}%20${encodedImgUrl}`,
   };
-  window.open(links[platform], "_blank", "noopener,noreferrer");
+
+  if (typeof window !== "undefined") {
+    window.open(links[platform], "_blank", "noopener,noreferrer");
+  }
 }
 
 // ─── Admin Modal ──────────────────────────────────────────────────────────────
@@ -313,7 +332,7 @@ function NewsCard({ item, onClick }: { item: NewsItem; onClick: () => void }) {
           ].map((s) => (
             <button
               key={s.platform}
-              onClick={() => shareUrl(s.platform, item.title)}
+              onClick={() => shareUrl(s.platform, item.title, item.img)}
               title={`Share on ${s.label}`}
               className={`w-7 h-7 rounded-lg bg-white/5 border border-white/10 text-white text-xs font-bold flex items-center justify-center transition-colors ${s.color}`}
             >
@@ -379,7 +398,7 @@ function NewsDetail({ item, onClose }: { item: NewsItem; onClose: () => void }) 
             ].map((s) => (
               <button
                 key={s.platform}
-                onClick={() => shareUrl(s.platform, item.title)}
+                onClick={() => shareUrl(s.platform, item.title, item.img)}
                 className={`${s.bg} text-white text-xs font-bold px-3 py-2 rounded-xl transition-colors`}
               >
                 {s.label}

@@ -3,10 +3,35 @@ import SubpageHero from "@/components/SubpageHero";
 import NewsUpdates from "@/components/NewsUpdates";
 import Footer from "@/components/Footer";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "News & Updates | Xeltra Energy Ltd",
   description:
     "Stay updated with Xeltra Energy's latest news, announcements, reports, and technological developments in Bangladesh's clean energy sector.",
+  openGraph: {
+    title: "News & Updates | Xeltra Energy Ltd",
+    description:
+      "Stay updated with Xeltra Energy's latest news, announcements, reports, and technological developments in Bangladesh's clean energy sector.",
+    url: "https://www.xeltraenergy.com/gallery",
+    siteName: "Xeltra Energy Ltd",
+    images: [
+      {
+        url: "https://www.xeltraenergy.com/assets/images/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Xeltra Energy News & Updates",
+      },
+    ],
+    locale: "en_BD",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "News & Updates | Xeltra Energy Ltd",
+    description: "Stay updated with Xeltra Energy's latest news and developments.",
+    images: ["https://www.xeltraenergy.com/assets/images/banner.png"],
+  },
 };
 
 export default function NewsPage() {
