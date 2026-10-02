@@ -215,15 +215,9 @@ export default function Home() {
                   <div className="flex flex-wrap gap-4">
                     <Link
                       href="/contact?inquire=solar-plant"
-                      className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3.5 rounded-xl text-xs sm:text-sm transition-all shadow-xl shadow-green-950/50 hover:-translate-y-0.5 flex items-center gap-2"
+                      className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-3.5 rounded-xl text-sm sm:text-base transition-all shadow-xl shadow-green-950/50 hover:-translate-y-0.5 flex items-center gap-2"
                     >
-                      Inquire About Be a Proud Owner of Solar Plant →
-                    </Link>
-                    <Link
-                      href="/market-analysis"
-                      className="bg-white/5 hover:bg-white/10 text-slate-200 font-bold px-6 py-3.5 rounded-xl text-xs sm:text-sm transition-all border border-white/10 hover:border-white/20"
-                    >
-                      Read Market & Tech Analysis
+                      Become a Solar Plant Owner →
                     </Link>
                   </div>
                 </div>

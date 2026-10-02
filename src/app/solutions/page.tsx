@@ -19,8 +19,8 @@ export default function SolutionsPage() {
       <main>
         <SubpageHero
           badge="Clean Technology Ecosystem"
-          title="Renewable Energy & Swapping"
-          titleHighlight="Infrastructure"
+          title="Xeltra Power bank &"
+          titleHighlight="Swapping infrastructure"
           subtitle="Explore our solar-powered battery swapping hubs, commercial rooftop solar, mobile power banks, and interactive ROI financial savings calculator."
         />
         <HowItWorks />

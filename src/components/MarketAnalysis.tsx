@@ -13,18 +13,7 @@ export default function MarketAnalysis() {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 text-green-400 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-4 shadow-lg backdrop-blur-md">
-            📊 Strategic Advantage
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-6">
-            Market Analysis & <span className="bg-gradient-to-r from-green-400 to-lime-300 bg-clip-text text-transparent">Competitive Edge</span>
-          </h2>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Why Xeltra Energy is revolutionary compared to traditional lead-acid battery electric three-wheelers in Bangladesh.
-          </p>
-        </div>
+
 
         {/* Tab Switcher */}
         <div className="flex justify-center mb-12">

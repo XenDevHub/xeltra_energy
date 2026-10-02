@@ -187,7 +187,7 @@ export default function Solutions() {
                       : "bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white shadow-lg shadow-green-900/40"
                   }`}
                 >
-                  Inquire About {activeSolution.title}
+                  {activeSolution.id === "power-bank" ? "Become a Solar Plant Owner" : `Inquire About ${activeSolution.title}`}
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
