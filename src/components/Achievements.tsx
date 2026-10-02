@@ -66,14 +66,18 @@ export default function Achievements() {
   const [error, setError] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
 
-  // Load custom achievements from localStorage
+  // Load custom achievements and filter deleted items from localStorage
   useEffect(() => {
     try {
       const stored = localStorage.getItem("xeltra_achievements");
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        setAchievements([...parsed, ...SEED_ACHIEVEMENTS]);
-      }
+      const deletedStored = localStorage.getItem("xeltra_deleted_achievements");
+      const deletedList: string[] = deletedStored ? JSON.parse(deletedStored) : [];
+
+      const customItems: AchievementItem[] = stored ? JSON.parse(stored) : [];
+      const combined = [...customItems, ...SEED_ACHIEVEMENTS].filter(
+        (item) => !deletedList.includes(item.id)
+      );
+      setAchievements(combined);
     } catch {}
   }, []);
 
@@ -120,13 +124,17 @@ export default function Achievements() {
   };
 
   const handleDelete = (id: string) => {
-    const existingCustomStored = localStorage.getItem("xeltra_achievements");
-    if (!existingCustomStored) return;
     try {
-      const existingCustom: AchievementItem[] = JSON.parse(existingCustomStored);
+      const stored = localStorage.getItem("xeltra_achievements");
+      let existingCustom: AchievementItem[] = stored ? JSON.parse(stored) : [];
       const updatedCustom = existingCustom.filter((item) => item.id !== id);
       saveAchievements(updatedCustom);
-      setAchievements(achievements.filter((item) => item.id !== id));
+
+      const deletedStored = localStorage.getItem("xeltra_deleted_achievements");
+      const deletedList: string[] = deletedStored ? JSON.parse(deletedStored) : [];
+      localStorage.setItem("xeltra_deleted_achievements", JSON.stringify([...deletedList, id]));
+
+      setAchievements((prev) => prev.filter((item) => item.id !== id));
     } catch {}
   };
 
@@ -168,7 +176,7 @@ export default function Achievements() {
               key={item.id}
               className="bg-slate-900/80 border border-slate-800 rounded-3xl overflow-hidden hover:border-green-500/40 transition-all duration-300 group hover:-translate-y-1 shadow-xl flex flex-col justify-between relative"
             >
-              {item.isAdminAdded && isAdmin && (
+              {isAdmin && (
                 <button
                   onClick={() => handleDelete(item.id)}
                   title="Delete Achievement"

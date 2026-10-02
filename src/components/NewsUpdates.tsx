@@ -420,11 +420,16 @@ export default function NewsUpdates() {
   const [activeItem, setActiveItem] = useState<NewsItem | null>(null);
   const [search, setSearch] = useState("");
 
-  // Load admin news from localStorage
+  const [deletedNewsIds, setDeletedNewsIds] = useState<string[]>([]);
+
+  // Load admin news and deleted news IDs from localStorage
   useEffect(() => {
     try {
       const stored = localStorage.getItem("xeltra_news");
       if (stored) setAdminNews(JSON.parse(stored));
+
+      const deletedStored = localStorage.getItem("xeltra_deleted_news");
+      if (deletedStored) setDeletedNewsIds(JSON.parse(deletedStored));
     } catch {}
   }, []);
 
@@ -438,11 +443,17 @@ export default function NewsUpdates() {
   };
 
   const handleDeleteNews = (id: string) => {
-    const updated = adminNews.filter((n) => n.id !== id);
-    saveAdminNews(updated);
+    const updatedAdmin = adminNews.filter((n) => n.id !== id);
+    saveAdminNews(updatedAdmin);
+
+    const updatedDeleted = [...deletedNewsIds, id];
+    setDeletedNewsIds(updatedDeleted);
+    localStorage.setItem("xeltra_deleted_news", JSON.stringify(updatedDeleted));
   };
 
-  const allNews = [...adminNews, ...SEED_NEWS];
+  const allNews = [...adminNews, ...SEED_NEWS].filter(
+    (item) => !deletedNewsIds.includes(item.id)
+  );
 
   const filtered = allNews.filter((item) => {
     const matchCat = activeCategory === "All News" || item.category === activeCategory;
@@ -518,7 +529,7 @@ export default function NewsUpdates() {
             {filtered.map((item) => (
               <div key={item.id} className="relative">
                 <NewsCard item={item} onClick={() => setActiveItem(item)} />
-                {item.isAdmin && (
+                {isAdmin && (
                   <button
                     onClick={() => handleDeleteNews(item.id)}
                     title="Delete this news"
