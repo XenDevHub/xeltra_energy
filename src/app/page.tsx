@@ -235,10 +235,10 @@ export default function Home() {
               Our Ecosystem
             </span>
             <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">
-              Brands We Work With
+              Clients We Work With
             </h3>
             <p className="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-12">
-              Proudly partnering with innovative brands shaping the future of electric mobility and clean energy.
+              Proudly partnering with innovative clients shaping the future of electric mobility and clean energy.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
