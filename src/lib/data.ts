@@ -207,7 +207,7 @@ export const TEAM = [
   {
     id: "rizwana",
     name: "Rizwana Hossain Chowdhury",
-    role: "Director",
+    role: "Director & Financial Executive",
     img: "/assets/team/rizwana.png",
     bio: "Handling financial accounting, budgeting, and corporate audit operations.",
     featured: false,
