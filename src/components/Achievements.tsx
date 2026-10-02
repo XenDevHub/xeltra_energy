@@ -17,14 +17,34 @@ export interface AchievementItem {
 
 const SEED_ACHIEVEMENTS: AchievementItem[] = [
   {
-    id: "achieve-1",
-    title: "Official Government Recognition & Certificate",
-    issuer: "Bangladesh Regulatory Authority & Energy Sector",
+    id: "saffal-1",
+    title: "Project SAFFAL Accelerator Programme",
+    issuer: "SAFFAL (saffal.asia)",
     date: "2025 - 2026",
     description:
-      "Official certificate and recognition authorizing Xeltra Energy Ltd's sustainable clean-energy development and solar EV infrastructure expansion across Bangladesh.",
-    img: "/assets/images/certificate.png",
-    category: "Official License & Certificate",
+      "Xeltra Energy participated in Project SAFFAL’s Accelerator Programme (2025–26) and successfully completed the programme, receiving recognition for its engagement with the SAFFAL Investor Network. Through the programme, Xeltra is building international connections, expanding its global network, and exploring opportunities for cross-border collaboration and investment.",
+    img: "/assets/certificates/saffal.png",
+    category: "Accelerator Programme",
+  },
+  {
+    id: "sreda-1",
+    title: "SERDA License Application",
+    issuer: "SERDA",
+    date: "2026",
+    description:
+      "Xeltra Energy has applied for the required SERDA license/approval for its EV charging station, supporting the company’s plan to establish a compliant and scalable battery-swapping and EV charging network in Bangladesh.",
+    img: "/assets/certificates/sreda.jpg",
+    category: "Official License",
+  },
+  {
+    id: "innovation-1",
+    title: "Innovation Fair 2026",
+    issuer: "Innovation Fair",
+    date: "2026",
+    description:
+      "Xeltra Energy participated in the Innovation Fair 2026, showcasing its innovative solar-powered Charging Station & Ecotrike. We demonstrating its vision for a cleaner, smarter, and more sustainable transportation ecosystem in Bangladesh.",
+    img: "/assets/certificates/innovation.jpg",
+    category: "Exhibition",
   },
 ];
 
